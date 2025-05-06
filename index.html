@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">Cozy Home</div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products-featured">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <a href="#" id="search-toggle">🔍</a>
+                    <a href="#" id="cart-toggle">
+                        🛒
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="products-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products">
+                <!-- Example product -->
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x250" alt="Modern Sofa">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Furniture</p>
+                        <h3 class="product-title">Modern Sofa</h3>
+                        <div class="product-price">
+                            <span class="price">$299.99</span>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-content">
+            <button id="close-checkout" class="close-checkout">×</button>
+            <h3>Checkout</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" required>
+                        <option value="credit">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn place-order-btn">Place Order Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="order-confirmation" class="order-confirmation">
+        <div class="confirmation-content">
+            <div class="confirmation-icon">✓</div>
+            <h3>Order Confirmed!</h3>
+            <p>Thank you for your purchase. You'll receive a confirmation email soon.</p>
+            <button id="close-confirmation" class="btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
